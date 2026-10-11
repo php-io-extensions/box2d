@@ -1,5 +1,6 @@
 # ext-box2d
 
+[![CI](https://img.shields.io/github/actions/workflow/status/php-io-extensions/box2d/ci.yml?style=flat-square&label=CI)](https://github.com/php-io-extensions/box2d/actions/workflows/ci.yml)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/php-io-extensions/box2d.svg)](https://packagist.org/packages/php-io-extensions/box2d)
 [![License](https://img.shields.io/packagist/l/php-io-extensions/box2d.svg)](LICENSE)
 
