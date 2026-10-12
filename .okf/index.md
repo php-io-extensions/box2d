@@ -4,7 +4,7 @@ okf_version: "0.2"
 
 # ext-box2d
 
-1:1 PHP bindings of Box2D v3.1.1 (vendored, unchanged). Version 0.10.0. Linux, macOS. PHP 8.4 NTS + ZTS.
+1:1 PHP bindings of Box2D v3.1.1 (vendored, unchanged). Version 0.10.5. Linux, macOS. PHP 8.4 NTS + ZTS.
 
 # API
 

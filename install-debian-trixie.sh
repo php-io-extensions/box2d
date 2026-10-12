@@ -219,12 +219,12 @@ echo ""
 
 # ── Verify ────────────────────────────────────────────────────────────────────
 step "🔍 Verifying installation (CLI)..."
-if ! "$PHP_BIN_REAL" -r 'exit(function_exists("SDL_Init") ? 0 : 1);' 2>/dev/null; then
+if ! "$PHP_BIN_REAL" -r 'exit(extension_loaded("box2d") ? 0 : 1);' 2>/dev/null; then
     "$PHP_BIN_REAL" -m 2>&1 | grep -i "${EXTENSION_NAME}\|error\|warn" || true
     "$PHP_BIN_REAL" --ini 2>/dev/null | grep -E "Scan for additional|Additional \.ini" || true
-    die "SDL_Init not available after install. Check ${INI_NAME} and ${LOG_FILE}."
+    die "box2d not loaded after install. Check ${INI_NAME} and ${LOG_FILE}."
 fi
-ok "SDL_Init is available in CLI"
+ok "box2d is loaded in CLI"
 echo ""
 
 # ── FPM reload ───────────────────────────────────────────────────────────────

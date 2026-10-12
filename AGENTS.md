@@ -10,4 +10,4 @@
 8. **The stub is the declaration.** Edit `stubs/*.stub.php`, regenerate with `php84 /opt/homebrew/opt/php@8.4/lib/php/build/gen_stub.php stubs`, commit both. Never hand-edit `*_arginfo.h`.
 9. **Build.** `./install-macos.sh` into Homebrew `php@8.4` and `php@8.4-zts`. On the Pi, copy the tree with `fnk` (set `COPYFILE_DISABLE=1` on the Mac `tar` so no `._*` files reach gen_stub) and `./install-debian-trixie.sh`. Pest at `-d memory_limit=128M`, with `XDEBUG_MODE=off` for any timing. Gate a commit on the suite's exit code.
 10. **Durable facts go in `.okf`.** Update the matching concept and append `.okf/log.md`.
-11. **Version** is `PHP_BOX2D_VERSION` in `php_box2d.h`: 0.10.0. `os-families`: linux, darwin.
+11. **Version** is `PHP_BOX2D_VERSION` in `php_box2d.h`: 0.10.5. `os-families`: linux, darwin.
