@@ -16,7 +16,7 @@ it('prints the extension version, the Box2D version, and the upstream commit', f
     phpinfo(INFO_MODULES);
     $info = ob_get_clean();
 
-    expect($info)->toContain('0.10.5')
+    expect($info)->toContain('0.11.0')
         ->and($info)->toContain('3.1.1')
         ->and($info)->toContain('8c661469c9507d3ad6fbd2fea3f1aa71669c2fe3');
 });

@@ -1,8 +1,11 @@
 # Log
 
+## 2026-10-28
+
+* **Version**: 0.11.0 in `PHP_BOX2D_VERSION`, `AGENTS.md`, `VersionTest` and this bundle, straight from 0.10.0; `branch-alias` `dev-main` is `0.11.x-dev`. Promoted with the Venusian 0.11 ecosystem. No API or behaviour change. Built and loaded on Homebrew PHP 8.4 NTS and ZTS, the Pi on 8.4 ZTS and an x86_64 8.4 NTS box: 99 passed on each.
+
 ## 2026-10-12
 
-* **Version**: 0.10.5 in `PHP_BOX2D_VERSION`, `AGENTS.md`, `VersionTest` and this bundle. No API change. First tag; the number lines up with the sibling extensions.
 * **README**: rewritten on the php-io-extensions template (header badges, two-part basic usage, requirements table, PIE / install script / phpize install paths, API, OKF section, suite run). The falling-box example and the suite count (99 passed, 1397 assertions) were run against a scratch build on Homebrew PHP 8.4 NTS.
 * **install-debian-trixie.sh**: the post-install check tested `function_exists("SDL_Init")`, left over from the sdl3 installer it was copied from, so it passed only where ext-sdl3 was also installed. It now tests `extension_loaded("box2d")`.
 
